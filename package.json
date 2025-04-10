@@ -9,8 +9,7 @@
     "lint": "next lint",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:push": "drizzle-kit push",
-    "postinstall": "bun install"
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.4.3",
@@ -32,6 +31,9 @@
     "marathon-16-website": "file:",
     "next": "15.2.1",
     "next-themes": "^0.4.6",
+    "nodemailer": "^6.10.0",
+    "pdf-lib": "^1.17.1",
+    "postgres": "^3.4.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
