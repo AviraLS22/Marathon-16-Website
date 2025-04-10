@@ -4,6 +4,9 @@ import registerRouter from "./signup";
 import userRouter from "./userinfo";
 import particiPantsRouter from "./participants";
 import crossRouter from "./qrcode";
+import { cors } from "hono/cors";
+
+
 
 
 const app = new Hono().basePath("/api")
@@ -12,6 +15,7 @@ const app = new Hono().basePath("/api")
   .route("/participants", particiPantsRouter)
   .route("/qrcode", crossRouter);
 
+app.use('*', cors());
 
 export const GET = handle(app);
 export const POST = handle(app);
