@@ -3,7 +3,7 @@ import { hc } from "hono/client";
 
 
 
-const BASE_URL = process.env.VERCEL_URL || "http://localhost:3000";
+const BASE_URL =  "https://marathon-16-website.vercel.app/"
 const client = hc<ApiType>(BASE_URL);
 
 
